@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKS | Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">SKS<span>.</span></a>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#planos">Planos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <span class="tag">DESENVOLVIMENTO WEB</span>
+
+            <h1>
+                Transformamos ideias em
+                <span>experiências digitais.</span>
+            </h1>
+
+            <p>
+                Criamos sites modernos e personalizados
+                para ajudar seu negócio a crescer na internet.
+            </p>
+
+            <a href="#planos" class="btn">
+                Conheça nossos planos
+            </a>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos serviços</h2>
+            <p>Encontre a solução ideal para seu negócio.</p>
+        </section>
+
+        
+<section id="planos" class="plans-section">
+
+    <span class="tag">ENCONTRE SUA SOLUÇÃO</span>
+
+    <h2>Escolha seu projeto</h2>
+
+    <p class="plans-description">
+        Cada negócio tem suas necessidades.
+        Escolha o modelo ideal para você.
+    </p>
+
+    <div class="plan-options">
+
+        <button class="plan-option active" data-plan="essencial">
+            <span>01</span>
+            <strong>Essencial</strong>
+            <small>Para começar</small>
+        </button>
+
+        <button class="plan-option" data-plan="intermediario">
+            <span>02</span>
+            <strong>Intermediário</strong>
+            <small>Para crescer</small>
+        </button>
+
+        <button class="plan-option" data-plan="completo">
+            <span>03</span>
+            <strong>Completo</strong>
+            <small>Para expandir</small>
+        </button>
+
+    </div>
+
+    <div class="plan-details">
+
+        <span id="plan-number">PLANO 01</span>
+
+        <h3 id="plan-title">Essencial</h3>
+
+        <p id="plan-description">
+            Ideal para quem deseja apresentar
+            seu negócio na internet.
+        </p>
+
+        <ul id="plan-features">
+            <li>Página de apresentação</li>
+            <li>Informações da empresa</li>
+            <li>Fotos e localização</li>
+            <li>Contato pelo WhatsApp</li>
+        </ul>
+
+        <button id="choose-plan" class="btn">
+            Quero este projeto
+        </button>
+
+    </div>
+
+<div id="project-modal" class="project-modal">
+
+    <div class="project-form">
+
+        <button type="button" id="close-modal" class="close-modal">
+            &times;
+        </button>
+
+        <span class="tag">SKS | SEU NOVO PROJETO</span>
+
+        <div class="progress-info">
+            <span id="step-label">ETAPA 1 DE 4</span>
+            <span id="progress-percent">25%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+
+        <form id="project-form">
+
+            <!-- ETAPA 1 -->
+            <div class="form-step active">
+
+                <h2>Vamos conhecer seu negócio!</h2>
+
+                <p>Primeiro, conte um pouco sobre sua empresa.</p>
+
+                <label for="business-name">Nome da empresa</label>
+                <input
+                    type="text"
+                    id="business-name"
+                    placeholder="Ex.: Loja da Maria"
+                    required
+                >
+
+                <label for="business-type">Qual é o ramo do negócio?</label>
+                <select id="business-type" required>
+                    <option value="">Selecione uma opção</option>
+                    <option>Roupas e acessórios</option>
+                    <option>Calçados</option>
+                    <option>Alimentação</option>
+                    <option>Beleza e estética</option>
+                    <option>Tecnologia</option>
+                    <option>Serviços</option>
+                    <option>Outro</option>
+                </select>
+
+            </div>
+
+            <!-- ETAPA 2 -->
+            <div class="form-step">
+
+                <h2>Como imagina seu site?</h2>
+
+                <p>Vamos definir a aparência do projeto.</p>
+
+                <label for="site-style">Qual estilo prefere?</label>
+                <select id="site-style" required>
+                    <option value="">Selecione uma opção</option>
+                    <option>Minimalista</option>
+                    <option>Moderno</option>
+                    <option>Elegante</option>
+                    <option>Colorido e criativo</option>
+                    <option>Não tenho preferência</option>
+                </select>
+
+                <label for="site-colors">Quais cores gostaria de usar?</label>
+                <input
+                    type="text"
+                    id="site-colors"
+                    placeholder="Ex.: Preto, branco e azul"
+                    required
+                >
+
+                <label for="site-reference">Possui algum site de referência?</label>
+                <input
+                    type="url"
+                    id="site-reference"
+                    placeholder="https://exemplo.com"
+                >
+
+            </div>
+
+            <!-- ETAPA 3 -->
+            <div class="form-step">
+
+                <h2>Deseja algo a mais?</h2>
+
+                <p>Seu plano já inclui as funcionalidades apresentadas. Aqui você pode escolher recursos adicionais. Eles podem ter um custo extra.</p>
+
+                <div class="feature-list">
+                    <label>
+                        <input type="checkbox" name="extras" value="Chat online">
+                        Chat online
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extras" value="Cupons de desconto">
+                        Cupons de desconto
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extras" value="Lista de favoritos">
+                        Lista de favoritos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extras" value="Cálculo de frete">
+                        Cálculo de frete
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extras" value="Integração com Instagram">
+                        Integração com Instagram
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extras" value="Avaliações de produtos">
+                        Avaliações de produtos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extras" value="Relatórios de vendas">
+                        Relatórios de vendas
+                    </label>
+                </div>
+
+                <p class="extras-notice">Os adicionais são opcionais e podem gerar custos extras.</p>
+
+            </div>
+            <!-- ETAPA 4 -->
+            <div class="form-step">
+
+                <h2>Quase tudo pronto!</h2>
+
+                <p>Agora precisamos entender seu investimento.</p>
+
+                <label for="budget">Quanto pretende investir?</label>
+
+                <select id="budget" required>
+                    <option value="">Selecione uma opção</option>
+                    <option>Até R$ 100</option>
+                    <option>R$ 100 a R$ 250</option>
+                    <option>R$ 250 a R$ 500</option>
+                    <option>R$ 500 a R$ 1.000</option>
+                    <option>Acima de R$ 1.000</option>
+                    <option>Ainda não defini</option>
+                </select>
+
+                <label for="project-details">Conte mais sobre sua ideia</label>
+
+                <textarea
+                    id="project-details"
+                    rows="4"
+                    placeholder="Descreva como gostaria que seu site funcionasse..."
+                ></textarea>
+
+            </div>
+
+            <div class="form-buttons">
+
+                <button type="button" id="previous-step" class="back-btn">
+                    Voltar
+                </button>
+
+                <button type="button" id="next-step" class="btn">
+                    Próxima etapa
+                </button>
+
+                <button type="submit" id="finish-form" class="btn" hidden>
+                    Finalizar projeto
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+        <section id="contato">
+            <h2>Vamos tirar sua ideia do papel?</h2>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
